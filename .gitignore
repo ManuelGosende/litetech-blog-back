@@ -1,7 +1,13 @@
 node_modules
-# Keep environment variables out of version control
+
+# Build output
+dist
+
+# Environment variables
 .env
 
+# Database
 *.db
 
+# Prisma generated files
 /generated/prisma
