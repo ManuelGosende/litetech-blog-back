@@ -9,7 +9,6 @@ export class PostService {
   async getRelatedPosts() {
     return this.prisma.relatedPost.findMany({
       orderBy: { createdAt: 'desc' },
-      take: 3,
     });
   }
 
